@@ -5,7 +5,6 @@ import PrivateRoutes from './PrivateRoutes';
 import LoginPage from '../pages/LoginPage';
 
 const MainRoutes = () => {
-    console.log('MainRoutes routes : ', routes);
     return (
         <Fragment>
             <Routes>
@@ -14,7 +13,7 @@ const MainRoutes = () => {
                         <Route path={path} element={Component} key={i} />
                     ))}
                 </Route>
-                <Route path="/login" element={<LoginPage />} />
+                <Route path="/" element={<LoginPage />} />
             </Routes>
         </Fragment>
     );
